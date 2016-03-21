@@ -5,14 +5,24 @@
 <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
 <script="js/bootstrap.js"></script>
 <style>
-.button{
-  margin-right: 500px ;
+.size{
+  font-size: 16px ;
 }
   .container {
     background-color:lightgray;
     margin-top:30px;
     padding-bottom:30px;
    }
+   
+   ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+      }
+      
+      #right {
+            position:absolute;
+            display:inline-block;
+            right: 0px;
+        }
 </style>
 <title>Bootstrap Practice</title>
 
@@ -97,7 +107,7 @@
   
 
     <h2>LeetCode Online Judge</h2>
-    <div font-size: 14px;>
+    <div class="size">
     <p> We are supporting <font color="red">JavaScript</font> and <font color="red">Ruby</font> now!</p>
     <p>LeetCode OJ is a platform for preparing technical coding interviews. Pick from an expanding library of more
       than <i>190</i> questions, code and submit your solution to see if you have solved it correctly. It is <i>that</i> easy!</p>
@@ -159,7 +169,7 @@
       
  
           <p></p>or sign up with: </p>
-        <div class="row" >
+        <div class="row" id="right" >
            <li><a href="http://www.facebook.com/LeetCode"><span class="glyphicon glyphicon-envelope"></span> Facebook</a></li>
            <li><a href="http://www.facebook.com/LeetCode"><span class="glyphicon glyphicon-envelope"></span> Google</a></li>
            <li><a href="http://www.facebook.com/LeetCode"><span class="glyphicon glyphicon-envelope"></span> Github</a></li>
