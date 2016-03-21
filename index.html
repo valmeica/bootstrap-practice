@@ -20,44 +20,77 @@
 
 <body>
 
-  <nav class="navbar navbar-default" style="background-color: black; class="col-xs-6 col-sm-6 col-md-6">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">LeetCodeOJ</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li <a href="#">LeetCode Premium Subscription</a></li>
-      <li><a href="#"><div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Problems
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div></a></li>
-      <li><a href="#">Pick One</a></li>
-      
-      <li><a href="#"><div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">mock
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">Mock Interview</a></li>
-    <li><a href="#">Past Sessions</a></li>
-  </ul>
-</div></a></li> 
-<li><a href="#">Articles</a></li>
-<li><a href="#">Discuss</a></li>
-<li><a href="#">Book</a></li>
-    </ul>
-  </div>
- <div class="navbar-form navbar-right">
+       <div class="navbar navbar-inverse navbar-extra">
+       
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand narrow-display" href="/">LeetCode OJ</a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <a class="navbar-brand" href="/">LeetCode OJ</a>
+            <ul class="nav navbar-nav">
+              
+              <li id="subscribe">
+                <a href="/subscribe/"><font color="orange">LeetCode Premium Subscription</font></a>
+              </li>
+              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                  Problems
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  
+                  <li><a href="/problemset/algorithms/">Algorithms</a></li>
+                  
+                  <li><a href="/problemset/database/">Database</a></li>
+                  
+                  <li><a href="/problemset/shell/">Shell</a></li>
+                  
+                </ul>
+              </li>
+              <li id="pickNav"><a onclick="ga('send', 'event', 'pick-one', 'click');" href="/problems/reverse-words-in-a-string">Pick One</a></li>
+              
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                     role="button" aria-expanded="false">
+                    Mock
+                    <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="/mockinterview/">Mock Interview</a>
+                    </li>
+                    <li>
+                      <a href="/mockinterview/session/list/">Past Sessions</a>
+                    </li>
+                  </ul>
+                </li>
+
+              
+              <li id="articlesNav"><a href="/articles/">Articles</a></li>
+          
+              
+              <li id=""><a href="/discuss/">Discuss</a></li>
+              
+              
+              <li id="bookNav"><a href="/book/"><font color="#ed9c28">Book</font></a></li>
+              
+              
+            </ul>
+            
+            <div class="navbar-form navbar-right">
               <a class="btn btn-primary" href="/accounts/signup">Sign up</a>
               <a class="btn btn-default" href="/accounts/login/">Sign in</a>
             </div>
-</nav>
 
 
+       </div>
+	   </div>
 
 
  <div class="container">
